@@ -81,5 +81,5 @@ You can configure the system by editing the `config.ini` file. Here are some of 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
    
