@@ -40,6 +40,7 @@ To get started with this project, follow these steps:
    ```bash
    git clone https://github.com/melbinjp/MultiCamSurveillance.git
    cd MultiCamSurveillance
+   ```
 
 
 2. Install the required Python libraries:
@@ -51,18 +52,19 @@ To get started with this project, follow these steps:
 3. Configure the system by editing the `config.ini` file.
 
 4. Create the necessary folders:
+   
     (actually created automatiaclly in the code but works the same when created manuallly also)
 
    ```bash
    mkdir logs images output
    ```
 
-6. Run the video surveillance system:
+5. Run the video surveillance system:
 
    ```bash
    python video_surveillance_backend.py
    ```
-7. open another terminal for the same directory then run the camera_feeds_retrieval_program:
+6. open another terminal for the same directory then run the camera_feeds_retrieval_program:
 
    ```bash
    python camera_feeds_retrieval_program.py
