@@ -11,7 +11,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 # Read configuration values
-log_file = config['General']['log_file']
+log_file = "app.log" #config['General']['log_file']
 error_log_file = config['General']['error_log']
 log_level = config['General']['log_level']
 fps = int(config['General']['output_fps'])
@@ -111,6 +111,7 @@ def extract_frames(batch, output_folder, duration):
                     continue
         if frames:
             print(f'{len(frames)} frames has been retrieved')
+            print(f"DEBUG: Batch data: {batch}")
            
             sample_frame = cv2.imread(frames[0]["image_path"])
             # Check if the image was loaded successfully
@@ -120,7 +121,7 @@ def extract_frames(batch, output_folder, duration):
                 print(f"Image Width: {frame_width} pixels")
                 print(f"Image Height: {frame_height} pixels")
             else:
-                frame_height, frame_width, _ = [640,480]
+                frame_height, frame_width = [640,480]
                 print(f"Failed to load the image.using default resolution{frame_height}X{frame_width}")
                 
 

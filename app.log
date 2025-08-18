@@ -1,0 +1,5 @@
+2025-08-17 15:17:01,743 - INFO - {"camera_id": "Camera_0", "frame_id": 1, "geo_location": "(0, 0)", "timestamp": 1723896001, "image_path": "images/Camera_0/frame_1.jpg"}
+2025-08-17 15:17:02,743 - INFO - {"camera_id": "Camera_0", "frame_id": 2, "geo_location": "(0, 0)", "timestamp": 1723896002, "image_path": "images/Camera_0/frame_2.jpg"}
+2025-08-17 15:17:03,743 - INFO - {"camera_id": "Camera_0", "frame_id": 3, "geo_location": "(0, 0)", "timestamp": 1723896003, "image_path": "images/Camera_0/frame_3.jpg"}
+2025-08-17 15:17:04,743 - INFO - {"camera_id": "Camera_0", "frame_id": 4, "geo_location": "(0, 0)", "timestamp": 1723896004, "image_path": "images/Camera_0/frame_4.jpg"}
+2025-08-17 15:17:05,743 - INFO - {"camera_id": "Camera_0", "frame_id": 5, "geo_location": "(0, 0)", "timestamp": 1723896005, "image_path": "images/Camera_0/frame_5.jpg"}

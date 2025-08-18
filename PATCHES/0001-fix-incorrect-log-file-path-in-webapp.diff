@@ -1,0 +1,30 @@
+From 0b7a4a9e7b2e4b3e8c1a2d3f4e5g6h7i8j9k0l1m NNNN
+From: Jules <jules@example.com>
+Date: Sun, 17 Aug 2025 15:30:00 +0000
+Subject: [PATCH] Fix incorrect log file path in webapp
+
+The /logs route in app.py was attempting to read from 'logs.log'
+instead of the correctly configured 'logs/app.log'.
+
+This patch corrects the hardcoded file path to allow the page
+to load without crashing. A more robust solution would involve
+reading the path from config.ini.
+---
+ app.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/app.py b/app.py
+index 1234567..abcdefg 100644
+--- a/app.py
++++ b/app.py
+@@ -21,7 +21,7 @@
+ @app.route('/logs')
+ def logs():
+     # Read and display logs from the log file
+-    with open('logs.log', 'r') as log_file:
++    with open('logs/app.log', 'r') as log_file:
+         logs = log_file.readlines()
+     return render_template('logs.html', logs=logs)
+
+--
+2.34.1
